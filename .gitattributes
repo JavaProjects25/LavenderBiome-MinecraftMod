@@ -1,0 +1,33 @@
+# ---- Line endings ----
+# Normalize all text files to LF in repo, convert to native on checkout
+* text=auto eol=lf
+
+# ---- Source code ----
+*.java     text diff=java
+*.kt       text diff=kotlin
+*.gradle   text
+*.properties text
+*.toml     text
+*.json     text
+*.yml      text
+*.yaml     text
+*.md       text
+*.txt      text
+
+# ---- Scripts ----
+*.sh       text eol=lf
+*.bat      text eol=crlf
+
+# ---- Binary files ----
+*.jar      binary
+*.class    binary
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.ico      binary
+*.zip      binary
+
+# ---- GitHub linguist overrides (optional) ----
+# Helps GitHub correctly detect language stats
+*.gradle linguist-language=Groovy
