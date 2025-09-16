@@ -1,2 +1,5 @@
-# MinecraftMod
+### MinecraftMod
+##Project Document: https://docs.google.com/document/d/1EFNs3szehrvj0eT7-y4afhu91Br_vpwuPW4TIQy5bZs/edit?tab=t.0
 Minecraft Mod in Java for the Java Final Project.
+
+
