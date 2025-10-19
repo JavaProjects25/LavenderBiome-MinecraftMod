@@ -22,7 +22,7 @@
       "sm.lavenderbiome.LavenderBiomeDataGenerator"
     ],
     "client": [
-      "sm.lavenderbiome.client.LavenderBiomeClient"
+      "sm.lavenderbiome.LavenderBiomeClient"
     ]
   },
   "mixins": [
