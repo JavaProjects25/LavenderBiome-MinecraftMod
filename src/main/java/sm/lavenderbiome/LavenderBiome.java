@@ -6,6 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class LavenderBiome implements ModInitializer {
+
+    //Mod ID, must be always this one.
 	public static final String MOD_ID = "lavenderbiome";
 
 	// This logger is used to write text to the console and the log file.
