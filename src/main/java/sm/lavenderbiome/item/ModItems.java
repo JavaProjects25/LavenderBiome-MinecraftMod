@@ -39,6 +39,7 @@ public class ModItems {
         // Add the LAVENDRITE item to the INGREDIENTS item group.
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(LAVENDRITE_INGOT);
+            entries.add(RAW_LAVENDRITE);
         });
     }
 }

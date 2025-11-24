@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "lavenderbiome:block/raw_lavendrite_block"
+  "model": {
+    "type": "minecraft:model",
+    "model": "lavenderbiome:item/raw_lavendrite_block"
   }
 }

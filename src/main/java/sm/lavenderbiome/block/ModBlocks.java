@@ -21,14 +21,14 @@ public class ModBlocks {
     // Register a new Block called "lavendrite_block", which is an instance of the Block class with specific settings,
     // not requires tool to mine it, and sounds like amethyst block., it has a strength of 4f so its kind of soft
     public static final Block LAVENDRITE_BLOCK = registerBlock("lavendrite_block",
-         AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(1.5F).sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool());
+            AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(1.5F).sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool());
 
     //raw ore block
     public static final Block RAW_LAVENDRITE_BLOCK = registerBlock("raw_lavendrite_block",
-            AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(3.0F).sounds(BlockSoundGroup.STONE).requiresTool());
+            AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(0.8F).sounds(BlockSoundGroup.STONE).requiresTool());
 
     public static final Block LAVENDRITE_ORE = registerBlock("lavendrite_ore",
-            AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(3.0F).sounds(BlockSoundGroup.STONE).requiresTool());
+            AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(1F).sounds(BlockSoundGroup.STONE).requiresTool());
 
 
 
