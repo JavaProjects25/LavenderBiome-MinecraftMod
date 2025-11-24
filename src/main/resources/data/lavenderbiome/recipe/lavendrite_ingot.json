@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "lavenderbiome:lavendrite_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "lavenderbiome:lavendrite_ingot"
+  }
+}
