@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
     "textures": {
-      "layer0": "lavenderbiome:item/lavendrite"
+      "layer0": "lavenderbiome:item/lavendrite_ingot"
     }
 }

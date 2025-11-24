@@ -1,5 +1,18 @@
 {
-  "item.lavenderbiome.lavendrite": "Lavendrite",
+  "itemgroup.lavender_biome.lavender_biome_group": "Biome de lavande",
 
-  "item.lavenderbiome.lavendrite_block": "Bloc de lavendrite"
+
+  "item.lavenderbiome.lavendrite_ingot": "Lingot de lavandrite",
+
+  "item.lavenderbiome.raw_lavendrite": "lavendrite brut",
+
+
+  "item.lavenderbiome.lavendrite_block": "Bloc de lavendrite",
+
+  "item.lavenderbiome.raw_lavendrite_block": "Bloc de lavendrite brut",
+
+  "item.lavenderbiome.lavendrite_ore" : "Minerai de lavendrite"
+
+
+
 }

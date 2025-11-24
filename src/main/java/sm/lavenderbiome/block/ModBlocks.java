@@ -23,6 +23,15 @@ public class ModBlocks {
     public static final Block LAVENDRITE_BLOCK = registerBlock("lavendrite_block",
          AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(1.5F).sounds(BlockSoundGroup.AMETHYST_BLOCK).requiresTool());
 
+    //raw ore block
+    public static final Block RAW_LAVENDRITE_BLOCK = registerBlock("raw_lavendrite_block",
+            AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(3.0F).sounds(BlockSoundGroup.STONE).requiresTool());
+
+    public static final Block LAVENDRITE_ORE = registerBlock("lavendrite_ore",
+            AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(3.0F).sounds(BlockSoundGroup.STONE).requiresTool());
+
+
+
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings){
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderBiome.MOD_ID, name));
         Block block = new Block(blockSettings.registryKey(key));
@@ -46,6 +55,8 @@ public class ModBlocks {
         // Add the new block to the Building Blocks item group in the Creative Mode inventory
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.LAVENDRITE_BLOCK);
+            entries.add(ModBlocks.RAW_LAVENDRITE_BLOCK);
+            entries.add(ModBlocks.LAVENDRITE_ORE);
         });
     }
 }

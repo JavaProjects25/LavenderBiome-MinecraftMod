@@ -2,7 +2,6 @@ package sm.lavenderbiome.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -16,8 +15,11 @@ public class ModItems {
     // Register a new Item called "lavendrite", which is an instance of the Item class with default settings.
     // // Lavendrite is a mineral item found from Lavendrite Ore in the Lavender Biome.
     // // static final modifier is like a const in C++/C#.
-    public static final Item LAVENDRITE = registerItem("lavendrite",
-            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(LavenderBiome.MOD_ID, "lavendrite"))));
+    public static final Item LAVENDRITE_INGOT = registerItem("lavendrite_ingot",
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(LavenderBiome.MOD_ID, "lavendrite_ingot"))));
+
+    public static final Item RAW_LAVENDRITE = registerItem("raw_lavendrite",
+            new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(LavenderBiome.MOD_ID, "raw_lavendrite"))));
 
     // Helper method to register items.
     // // A helper method is used to reduce code duplication when registering multiple items.
@@ -36,7 +38,7 @@ public class ModItems {
 
         // Add the LAVENDRITE item to the INGREDIENTS item group.
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(LAVENDRITE);
+            entries.add(LAVENDRITE_INGOT);
         });
     }
 }
