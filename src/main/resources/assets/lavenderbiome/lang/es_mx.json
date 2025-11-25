@@ -1,17 +1,13 @@
 {
-
   "itemgroup.lavender_biome.lavender_biome_group": "Bioma de lavanda",
 
 
   "item.lavenderbiome.lavendrite_ingot": "Lingote de lavandrita",
-
   "item.lavenderbiome.raw_lavendrite": "Lavandrita en bruto",
 
 
   "item.lavenderbiome.lavendrite_block": "Bloque de lavandrita",
-
   "item.lavenderbiome.raw_lavendrite_block": "Bloque de lavandrita bruto",
-
-  "item.lavenderbiome.lavendrite_ore" : "Mineral de lavandrita"
-
+  "item.lavenderbiome.lavendrite_ore" : "Mineral de lavandrita",
+  "item.lavenderbiome.deepslate_lavendrite_ore" : "Mineral de lavandrita de pizarra profunda"
 }

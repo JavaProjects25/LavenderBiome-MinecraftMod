@@ -3,16 +3,12 @@
 
 
   "item.lavenderbiome.lavendrite_ingot": "Lingot de lavandrite",
-
   "item.lavenderbiome.raw_lavendrite": "Lavendrite brut",
 
 
   "item.lavenderbiome.lavendrite_block": "Bloc de lavendrite",
-
   "item.lavenderbiome.raw_lavendrite_block": "Bloc de lavendrite brut",
-
-  "item.lavenderbiome.lavendrite_ore" : "Minerai de lavendrite"
-
-
+  "item.lavenderbiome.lavendrite_ore" : "Minerai de lavendrite",
+  "item.lavenderbiome.deepslate_lavendrite_ore" : "Minerai de lavandrite de profondoise"
 
 }

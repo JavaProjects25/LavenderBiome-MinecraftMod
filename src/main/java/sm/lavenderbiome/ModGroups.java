@@ -21,10 +21,9 @@ public class ModGroups {
                         entries.add(ModItems.RAW_LAVENDRITE);
                         entries.add(ModBlocks.LAVENDRITE_BLOCK);
                         entries.add(ModBlocks.LAVENDRITE_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_LAVENDRITE_ORE);
                         entries.add(ModBlocks.RAW_LAVENDRITE_BLOCK);
-                    }
-                    ))
-                    .build());
+                    })).build());
 
     public static void registerItemGroups() {
         LavenderBiome.LOGGER.info("Registering Mod Item Groups for: " + LavenderBiome.MOD_ID);
