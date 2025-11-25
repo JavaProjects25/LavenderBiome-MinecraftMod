@@ -1,14 +1,21 @@
 package sm.lavenderbiome.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import sm.lavenderbiome.LavenderBiome;
+import sm.lavenderbiome.item.custom.LavenderLatteItem;
+import sm.lavenderbiome.item.custom.ModConsumableComponents;
+import sm.lavenderbiome.item.custom.ModFoodComponents;
 
 public class ModItems {
 
@@ -20,6 +27,16 @@ public class ModItems {
 
     public static final Item RAW_LAVENDRITE = registerItem("raw_lavendrite",
             new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(LavenderBiome.MOD_ID, "raw_lavendrite"))));
+
+    public static final Item LAVENDER_LATTE = registerItem("lavender_latte",
+            new LavenderLatteItem
+                    .Settings().rarity(Rarity.RARE)
+                    .maxCount(16)
+                    .food(ModFoodComponents.LAVENDER_LATTE, ModConsumableComponents.LAVENDER_LATTE)
+                    .component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
+                    .recipeRemainder(Items.GLASS_BOTTLE)
+                    .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(LavenderBiome.MOD_ID, "lavender_latte"))));
+            //(new Item.Settings().rarity(Rarity.RARE).food(ModFoodComponents.LAVENDER_LATTE, ModConsumableComponents.LAVENDER_LATTE).component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)));
 
     // Helper method to register items.
     // // A helper method is used to reduce code duplication when registering multiple items.
@@ -40,6 +57,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(LAVENDRITE_INGOT);
             entries.add(RAW_LAVENDRITE);
+            entries.add(LAVENDER_LATTE);
         });
     }
 }

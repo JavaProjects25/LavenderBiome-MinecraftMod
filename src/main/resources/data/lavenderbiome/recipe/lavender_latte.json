@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "key": {
+    "#": "lavenderbiome:lavendrite_ingot",
+    "S": "minecraft:sugar",
+    "M": "minecraft:milk_bucket",
+    "G": "minecraft:glass_bottle"
+  },
+  "pattern": [
+    "###",
+    "SGS",
+    " M "
+  ],
+  "result": {
+    "count": 1,
+    "id": "lavenderbiome:lavender_latte"
+  }
+}
