@@ -23,6 +23,7 @@ public class ModGroups {
                         entries.add(ModBlocks.LAVENDRITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_LAVENDRITE_ORE);
                         entries.add(ModBlocks.RAW_LAVENDRITE_BLOCK);
+                        entries.add(ModItems.LAVENDER_LATTE);
                     })).build());
 
     public static void registerItemGroups() {

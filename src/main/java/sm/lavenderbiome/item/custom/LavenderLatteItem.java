@@ -5,6 +5,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsage;
 import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.stat.Stats;
@@ -18,24 +19,25 @@ public class LavenderLatteItem extends Item {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+        // This call handles eating the food and decrementing the stack.
+        super.finishUsing(stack, world, user);
+
         if (user instanceof ServerPlayerEntity serverPlayer) {
             Criteria.CONSUME_ITEM.trigger(serverPlayer, stack);
             serverPlayer.incrementStat(Stats.USED.getOrCreateStat(this));
         }
 
-        ItemStack result = super.finishUsing(stack, world, user);
-
+        // If the user is a player, give them a glass bottle back.
         if (user instanceof PlayerEntity player && !player.getAbilities().creativeMode) {
-            ItemStack bottle = new ItemStack(Items.GLASS_BOTTLE);
+            // If the latte stack is now empty, return a glass bottle to replace it.
             if (stack.isEmpty()) {
-                return bottle;
-            } else {
-                if (!player.getInventory().insertStack(bottle)) {
-                    player.dropItem(bottle, false);
-                }
+                return new ItemStack(Items.GLASS_BOTTLE);
             }
+            // If the stack is not empty, add a glass bottle to the player's inventory.
+            player.getInventory().insertStack(new ItemStack(Items.GLASS_BOTTLE));
         }
 
-        return result;
+        // Return the original stack, which is now either empty or has a reduced count.
+        return stack;
     }
 }

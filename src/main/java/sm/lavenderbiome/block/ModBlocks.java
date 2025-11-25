@@ -13,6 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import sm.lavenderbiome.LavenderBiome;
+
 import java.util.function.Function;
 
 public class ModBlocks {
