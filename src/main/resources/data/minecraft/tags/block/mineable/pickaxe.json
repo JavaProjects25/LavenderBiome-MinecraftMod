@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "lavenderbiome:lavendrite_block",
-    "lavenderbiome:lavendrite_ore",
-    "lavenderbiome:deepslate_lavendrite_ore",
-    "lavenderbiome:raw_lavendrite_block"
-  ]
-}

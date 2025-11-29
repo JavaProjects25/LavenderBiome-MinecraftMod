@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lavendrite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lavenderbiome:lavendrite_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lavenderbiome:lavendrite_ingot_from_smelting_lavendrite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lavendrite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lavenderbiome:lavendrite_ingot_from_smelting_lavendrite_ore"
+    ]
+  }
+}

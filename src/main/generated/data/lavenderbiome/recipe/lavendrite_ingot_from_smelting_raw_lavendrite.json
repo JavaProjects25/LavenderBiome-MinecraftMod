@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "lavendrite",
+  "ingredient": "lavenderbiome:raw_lavendrite",
+  "result": {
+    "id": "lavenderbiome:lavendrite_ingot"
+  }
+}

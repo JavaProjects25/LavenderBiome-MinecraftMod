@@ -1,0 +1,4 @@
+// 1.21.10	-999999999-01-01T00:00:00	LavenderBiome/Tags for minecraft:block
+63996d6b358fcc66fcaa8d591fad0c71b2f9931f data/minecraft/tags/block/mineable/pickaxe.json
+7108267a134f43ac251b37ed08d9386a5eedb344 data/minecraft/tags/block/needs_iron_tool.json
+40d83c2ed969ad9fa48c4abf77d315aea9a43742 data/minecraft/tags/block/needs_stone_tool.json
