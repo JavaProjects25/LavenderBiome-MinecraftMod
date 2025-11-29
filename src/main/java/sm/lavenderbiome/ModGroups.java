@@ -29,6 +29,8 @@ public class ModGroups {
 
                         // Food & Drink
                         entries.add(ModItems.LAVENDER_LATTE);
+                        entries.add(ModItems.LAVENDER_SEEDS);
+                        entries.add(ModItems.LAVENDER);
 
                         // Tools
                         entries.add(ModItems.LAVENDRITE_SWORD);
@@ -39,6 +41,9 @@ public class ModGroups {
 
                         // Custom Tools
                         entries.add(ModItems.LAVENDRITE_CROSSPICK);
+
+
+
 
                     })).build());
 

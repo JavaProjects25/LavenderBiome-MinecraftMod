@@ -2,6 +2,7 @@ package sm.lavenderbiome.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -13,6 +14,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import sm.lavenderbiome.LavenderBiome;
+import sm.lavenderbiome.block.custom.LavenderCropBlock;
 
 import java.util.function.Function;
 
@@ -30,7 +32,10 @@ public class ModBlocks {
             (settings -> new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), settings)),
             AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(4.5F, 6F).sounds(BlockSoundGroup.DEEPSLATE).requiresTool());
 
-
+    public static final Block LAVENDER_CROP = registerBlockWithoutBlockItem("lavender_crop",
+            properties -> new LavenderCropBlock(properties.noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
 
     // Factory design method to create blocks with custom settings.
     private static Block registerFactoryBlock(String name, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
@@ -46,6 +51,16 @@ public class ModBlocks {
         Block block = new Block(blockSettings.registryKey(key));
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, key, block);
+    }
+
+    /*
+    private static Block registerBlockWithoutBlockItem(String name, Block block){
+        return Registry.register(Registries.BLOCK, Identifier.of(LavenderBiome.MOD_ID, name), block);
+    } */
+
+    private static Block registerBlockWithoutBlockItem(String name, Function<AbstractBlock.Settings, Block> function) {
+        return Registry.register(Registries.BLOCK, Identifier.of(LavenderBiome.MOD_ID, name),
+                function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(LavenderBiome.MOD_ID, name)))));
     }
 
     // Register the BlockItem for the newly registered Block instance (the item form of the block).
@@ -68,6 +83,10 @@ public class ModBlocks {
             entries.add(ModBlocks.RAW_LAVENDRITE_BLOCK);
             entries.add(ModBlocks.LAVENDRITE_ORE);
             entries.add(ModBlocks.DEEPSLATE_LAVENDRITE_ORE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries ->{
+            entries.add(ModBlocks.LAVENDER_CROP);
         });
     }
 }

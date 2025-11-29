@@ -17,9 +17,15 @@
   "item.lavenderbiome.lavendrite_crosspick": "Lavendrite Crosspick",
 
 
+
   "item.lavenderbiome.lavendrite_block": "Block of Lavendrite",
   "item.lavenderbiome.raw_lavendrite_block": "Raw Lavendrite Block",
   "item.lavenderbiome.lavendrite_ore" : "Lavendrite Ore",
-  "item.lavenderbiome.deepslate_lavendrite_ore" : "Deepslate Lavendrite Ore"
+  "item.lavenderbiome.deepslate_lavendrite_ore" : "Deepslate Lavendrite Ore",
+
+
+  "item.lavenderbiome.lavender" : "Lavender",
+  "item.lavenderbiome.lavender_seeds" : "Lavender Seeds",
+  "item.lavenderbiome.lavender_crop" : "Lavender Crop"
 
 }

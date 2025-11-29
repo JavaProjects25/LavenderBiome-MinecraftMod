@@ -14,11 +14,17 @@
   "item.lavenderbiome.lavendrite_axe": "Hache en lavandrite",
   "item.lavenderbiome.lavendrite_shovel":"Pelle en lavandrite",
   "item.lavenderbiome.lavendrite_hoe": "Houe en lavandrite",
-    "item.lavenderbiome.lavendrite_crosspick": "Pioche croisée en lavandrite",
+  "item.lavenderbiome.lavendrite_crosspick": "Pioche croisée en lavandrite",
+
 
   "item.lavenderbiome.lavendrite_block": "Bloc de lavendrite",
   "item.lavenderbiome.raw_lavendrite_block": "Bloc de lavendrite brut",
   "item.lavenderbiome.lavendrite_ore" : "Minerai de lavendrite",
-  "item.lavenderbiome.deepslate_lavendrite_ore" : "Minerai de lavandrite de profondoise"
+  "item.lavenderbiome.deepslate_lavendrite_ore" : "Minerai de lavandrite de profondoise",
+
+
+  "item.lavenderbiome.lavender" : "Lavande",
+  "item.lavenderbiome.lavender_seeds" : "Graines de lavande",
+  "item.lavenderbiome.lavender_crop" : "Culture de lavande"
 
 }

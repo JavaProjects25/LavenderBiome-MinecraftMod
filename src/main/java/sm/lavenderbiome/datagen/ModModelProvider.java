@@ -6,6 +6,7 @@ import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
 import sm.lavenderbiome.block.ModBlocks;
+import sm.lavenderbiome.block.custom.LavenderCropBlock;
 import sm.lavenderbiome.item.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -20,9 +21,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_LAVENDRITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVENDRITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_LAVENDRITE_ORE);
+
+        // Food and plants
+        blockStateModelGenerator.registerCrop(ModBlocks.LAVENDER_CROP, LavenderCropBlock.AGE, 0,1,2,3);
     }
-
-
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
@@ -39,5 +41,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LAVENDRITE_HOE, Models.HANDHELD);
         //custom tools
         itemModelGenerator.register(ModItems.LAVENDRITE_CROSSPICK, Models.HANDHELD);
+
+        //food and plants
+        itemModelGenerator.register(ModItems.LAVENDER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LAVENDER_SEEDS, Models.GENERATED);
+
     }
 }

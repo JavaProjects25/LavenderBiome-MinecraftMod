@@ -20,5 +20,10 @@
   "item.lavenderbiome.lavendrite_block": "Bloque de lavandrita",
   "item.lavenderbiome.raw_lavendrite_block": "Bloque de lavandrita bruto",
   "item.lavenderbiome.lavendrite_ore" : "Mineral de lavandrita",
-  "item.lavenderbiome.deepslate_lavendrite_ore" : "Mineral de lavandrita de pizarra profunda"
+  "item.lavenderbiome.deepslate_lavendrite_ore" : "Mineral de lavandrita de pizarra profunda",
+
+
+  "item.lavenderbiome.lavender" : "Lavanda",
+  "item.lavenderbiome.lavender_seeds" : "Semillas de lavanda",
+  "item.lavenderbiome.lavender_crop" : "Cultivo de lavanda"
 }
