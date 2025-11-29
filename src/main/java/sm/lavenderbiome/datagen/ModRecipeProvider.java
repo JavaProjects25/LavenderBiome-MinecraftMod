@@ -37,12 +37,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         ModBlocks.DEEPSLATE_LAVENDRITE_ORE
                 );
 
+                //smelting and blasting
                 offerSmelting(LAVENDRITE_SMELTABLES, RecipeCategory.MISC, ModItems.LAVENDRITE_INGOT, 0.2f, 200, "lavendrite");
                 offerBlasting(LAVENDRITE_SMELTABLES, RecipeCategory.MISC, ModItems.LAVENDRITE_INGOT, 0.2f, 100, "lavendrite");
 
+                //blocks and items
                 offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.LAVENDRITE_INGOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAVENDRITE_BLOCK);
                 offerReversibleCompactingRecipes(RecipeCategory.MISC, ModItems.RAW_LAVENDRITE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_LAVENDRITE_BLOCK);
 
+                //food & drink
                 createShaped(RecipeCategory.FOOD, ModItems.LAVENDER_LATTE)
                         .pattern("###")
                         .pattern("SGS")
@@ -54,6 +57,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.LAVENDRITE_INGOT), conditionsFromItem(ModItems.LAVENDRITE_INGOT))
                         .offerTo(exporter);
 
+                //raw lavendrite and lavendrite ingot from blocks
                 createShapeless(RecipeCategory.MISC, ModItems.RAW_LAVENDRITE, 9)
                         .input(ModBlocks.RAW_LAVENDRITE_BLOCK)
                         .criterion(hasItem(ModBlocks.RAW_LAVENDRITE_BLOCK), conditionsFromItem(ModBlocks.RAW_LAVENDRITE_BLOCK))
@@ -63,6 +67,53 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input(ModBlocks.LAVENDRITE_BLOCK)
                         .criterion(hasItem(ModBlocks.LAVENDRITE_BLOCK), conditionsFromItem(ModBlocks.LAVENDRITE_BLOCK))
                         .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(LavenderBiome.MOD_ID, "lavendrite_ingot_from_block")));
+
+                //tools & Combat
+                createShaped(RecipeCategory.COMBAT, ModItems.LAVENDRITE_SWORD)
+                        .pattern(" # ")
+                        .pattern(" # ")
+                        .pattern(" S ")
+                        .input('#', ModItems.LAVENDRITE_INGOT)
+                        .input('S', STICK)
+                        .criterion(hasItem(ModItems.LAVENDRITE_INGOT), conditionsFromItem(ModItems.LAVENDRITE_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.TOOLS, ModItems.LAVENDRITE_PICKAXE)
+                        .pattern("###")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('#', ModItems.LAVENDRITE_INGOT)
+                        .input('S', STICK)
+                        .criterion(hasItem(ModItems.LAVENDRITE_INGOT), conditionsFromItem(ModItems.LAVENDRITE_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.TOOLS, ModItems.LAVENDRITE_AXE)
+                        .pattern("## ")
+                        .pattern("#S ")
+                        .pattern(" S ")
+                        .input('#', ModItems.LAVENDRITE_INGOT)
+                        .input('S', STICK)
+                        .criterion(hasItem(ModItems.LAVENDRITE_INGOT), conditionsFromItem(ModItems.LAVENDRITE_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.TOOLS, ModItems.LAVENDRITE_SHOVEL)
+                        .pattern(" # ")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('#', ModItems.LAVENDRITE_INGOT)
+                        .input('S', STICK)
+                        .criterion(hasItem(ModItems.LAVENDRITE_INGOT), conditionsFromItem(ModItems.LAVENDRITE_INGOT))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.TOOLS, ModItems.LAVENDRITE_HOE)
+                        .pattern("## ")
+                        .pattern(" S ")
+                        .pattern(" S ")
+                        .input('#', ModItems.LAVENDRITE_INGOT)
+                        .input('S', STICK)
+                        .criterion(hasItem(ModItems.LAVENDRITE_INGOT), conditionsFromItem(ModItems.LAVENDRITE_INGOT))
+                        .offerTo(exporter);
+
             }
         };
     }

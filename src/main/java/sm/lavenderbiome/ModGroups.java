@@ -17,13 +17,26 @@ public class ModGroups {
             FabricItemGroup.builder().icon(() ->new ItemStack(ModBlocks.LAVENDRITE_BLOCK))
                     .displayName(Text.translatable("itemgroup.lavender_biome.lavender_biome_group"))
                     .entries(((displayContext, entries) -> {
+                        // Misc
                         entries.add(ModItems.LAVENDRITE_INGOT);
                         entries.add(ModItems.RAW_LAVENDRITE);
+
+                        // Blocks
                         entries.add(ModBlocks.LAVENDRITE_BLOCK);
                         entries.add(ModBlocks.LAVENDRITE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_LAVENDRITE_ORE);
                         entries.add(ModBlocks.RAW_LAVENDRITE_BLOCK);
+
+                        // Food & Drink
                         entries.add(ModItems.LAVENDER_LATTE);
+
+                        // Tools
+                        entries.add(ModItems.LAVENDRITE_SWORD);
+                        entries.add(ModItems.LAVENDRITE_PICKAXE);
+                        entries.add(ModItems.LAVENDRITE_AXE);
+                        entries.add(ModItems.LAVENDRITE_SHOVEL);
+                        entries.add(ModItems.LAVENDRITE_HOE);
+
                     })).build());
 
     public static void registerItemGroups() {

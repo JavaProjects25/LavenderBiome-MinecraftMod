@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lavendrite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lavenderbiome:lavendrite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lavenderbiome:lavendrite_sword"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lavendrite_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lavenderbiome:lavendrite_sword"
+    ]
+  }
+}

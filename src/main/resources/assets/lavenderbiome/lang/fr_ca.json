@@ -9,6 +9,12 @@
   "item.lavenderbiome.raw_lavendrite": "Lavendrite brut",
 
 
+  "item.lavenderbiome.lavendrite_sword": "Épée en lavendrite",
+  "item.lavenderbiome.lavendrite_pickaxe":"Pioche en lavandrite",
+  "item.lavenderbiome.lavendrite_axe": "Hache en lavandrite",
+  "item.lavenderbiome.lavendrite_shovel":"Pelle en lavandrite",
+  "item.lavenderbiome.lavendrite_hoe": "Houe en lavandrite",
+
   "item.lavenderbiome.lavendrite_block": "Bloc de lavendrite",
   "item.lavenderbiome.raw_lavendrite_block": "Bloc de lavendrite brut",
   "item.lavenderbiome.lavendrite_ore" : "Minerai de lavendrite",

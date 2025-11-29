@@ -15,6 +15,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        //general blocks
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVENDRITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_LAVENDRITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVENDRITE_ORE);
@@ -25,8 +26,16 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        //general items
         itemModelGenerator.register(ModItems.LAVENDRITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.LAVENDER_LATTE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_LAVENDRITE, Models.GENERATED);
+
+        //tools and combat
+        itemModelGenerator.register(ModItems.LAVENDRITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LAVENDRITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LAVENDRITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LAVENDRITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LAVENDRITE_HOE, Models.HANDHELD);
     }
 }
