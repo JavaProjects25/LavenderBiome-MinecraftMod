@@ -54,11 +54,11 @@ public class ModItems {
     public static final Item LAVENDRITE_PICKAXE = registerItem("lavendrite_pickaxe",
             settings -> new Item(settings.pickaxe(ModToolMaterials.LAVENDRITE, 1.0F, -0.1f)));
     public static final Item LAVENDRITE_AXE = registerItem("lavendrite_axe",
-            settings -> new Item(settings.axe(ModToolMaterials.LAVENDRITE, 6.0F, -1.0f)));
+            settings -> new AxeItem(ModToolMaterials.LAVENDRITE, 6.0F, -1.0f, settings));
     public static final Item LAVENDRITE_SHOVEL = registerItem("lavendrite_shovel",
-            settings -> new Item(settings.shovel(ModToolMaterials.LAVENDRITE, 1.5F, -0.1f)));
+            settings -> new ShovelItem(ModToolMaterials.LAVENDRITE, 1.5F, -0.1f, settings));
     public static final Item LAVENDRITE_HOE = registerItem("lavendrite_hoe",
-            settings -> new Item(settings.hoe(ModToolMaterials.LAVENDRITE, -3.0F, -0.0f)));
+            settings -> new HoeItem(ModToolMaterials.LAVENDRITE, -3.0F, -0.0f, settings));
 
     // Helper method to register items.
     // // How it works is that it takes in the name of the item and the item instance,

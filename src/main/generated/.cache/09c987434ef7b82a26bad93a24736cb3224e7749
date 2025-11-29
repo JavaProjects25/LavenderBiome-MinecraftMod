@@ -1,2 +1,7 @@
 // 1.21.10	-999999999-01-01T00:00:00	LavenderBiome/Tags for minecraft:item
 b138eae2d2f0dabcdf00d9d85868f7f40b56a12f data/lavenderbiome/tags/item/lavendrite_repair.json
+6e2395d1ed690a2051256c31404b32876fc76404 data/minecraft/tags/item/axes.json
+d64eec0d6db1a302501ed7d599c676044a54ead8 data/minecraft/tags/item/hoes.json
+8af7dea40de948e99b066afafdf609f8bc792e4e data/minecraft/tags/item/pickaxes.json
+3a866919d2cb41547f0e0ea1b37fce4f1b78a23a data/minecraft/tags/item/shovels.json
+4fc9d2bc06481f1bb082213dce1e7e6441610536 data/minecraft/tags/item/swords.json

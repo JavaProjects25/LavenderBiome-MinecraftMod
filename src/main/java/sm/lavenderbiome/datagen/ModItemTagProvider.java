@@ -3,6 +3,7 @@ package sm.lavenderbiome.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 import org.jetbrains.annotations.Nullable;
 import sm.lavenderbiome.item.ModItems;
 import sm.lavenderbiome.util.ModTags;
@@ -20,6 +21,19 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         valueLookupBuilder(ModTags.Items.LAVENDRITE_REPAIR)
                 .add(ModItems.LAVENDRITE_INGOT);
+
+        //tools
+        valueLookupBuilder(ItemTags.SWORDS)
+                .add(ModItems.LAVENDRITE_SWORD);
+        valueLookupBuilder(ItemTags.PICKAXES)
+                .add(ModItems.LAVENDRITE_PICKAXE);
+        valueLookupBuilder(ItemTags.AXES)
+                .add(ModItems.LAVENDRITE_AXE);
+        valueLookupBuilder(ItemTags.SHOVELS)
+                .add(ModItems.LAVENDRITE_SHOVEL);
+        valueLookupBuilder(ItemTags.HOES)
+                .add(ModItems.LAVENDRITE_HOE);
+
 
 
     }

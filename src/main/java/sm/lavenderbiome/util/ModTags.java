@@ -25,7 +25,6 @@ public class ModTags
         public static final TagKey<Item> LAVENDRITE_REPAIR = createTag("lavendrite_repair");
 
 
-
         private static TagKey<Item> createTag(String name){
             return TagKey.of(RegistryKeys.ITEM,  Identifier.of(LavenderBiome.MOD_ID, name));
         }
