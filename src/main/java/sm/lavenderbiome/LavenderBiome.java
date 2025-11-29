@@ -2,10 +2,12 @@ package sm.lavenderbiome;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sm.lavenderbiome.block.ModBlocks;
 import sm.lavenderbiome.item.ModItems;
+import sm.lavenderbiome.util.CrosspickUsageEvent;
 
 public class LavenderBiome implements ModInitializer {
 
@@ -26,5 +28,7 @@ public class LavenderBiome implements ModInitializer {
         ModGroups.registerItemGroups();
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+
+        PlayerBlockBreakEvents.BEFORE.register(new CrosspickUsageEvent());
 	}
 }

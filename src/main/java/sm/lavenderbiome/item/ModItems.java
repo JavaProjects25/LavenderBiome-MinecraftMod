@@ -5,7 +5,6 @@ import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.Item;
 import net.minecraft.item.*;
 import net.minecraft.item.ItemGroups;
-import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -13,8 +12,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import sm.lavenderbiome.LavenderBiome;
-import sm.lavenderbiome.item.custom.ModConsumableComponents;
-import sm.lavenderbiome.item.custom.ModFoodComponents;
+import sm.lavenderbiome.item.custom.CrosspickItem;
 
 import java.util.function.Function;
 
@@ -59,6 +57,10 @@ public class ModItems {
             settings -> new ShovelItem(ModToolMaterials.LAVENDRITE, 1.5F, -0.1f, settings));
     public static final Item LAVENDRITE_HOE = registerItem("lavendrite_hoe",
             settings -> new HoeItem(ModToolMaterials.LAVENDRITE, -3.0F, -0.0f, settings));
+
+    //custom tools
+    public static final Item LAVENDRITE_CROSSPICK = registerItem("lavendrite_crosspick",
+            settings -> new CrosspickItem(ModToolMaterials.LAVENDRITE, 7.0F, -4.0f, settings));
 
     // Helper method to register items.
     // // How it works is that it takes in the name of the item and the item instance,

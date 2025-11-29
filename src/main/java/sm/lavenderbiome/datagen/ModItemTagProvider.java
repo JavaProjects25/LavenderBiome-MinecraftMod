@@ -26,7 +26,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ItemTags.SWORDS)
                 .add(ModItems.LAVENDRITE_SWORD);
         valueLookupBuilder(ItemTags.PICKAXES)
-                .add(ModItems.LAVENDRITE_PICKAXE);
+                .add(ModItems.LAVENDRITE_PICKAXE)
+                .add(ModItems.LAVENDRITE_CROSSPICK); //custom pickaxe
         valueLookupBuilder(ItemTags.AXES)
                 .add(ModItems.LAVENDRITE_AXE);
         valueLookupBuilder(ItemTags.SHOVELS)

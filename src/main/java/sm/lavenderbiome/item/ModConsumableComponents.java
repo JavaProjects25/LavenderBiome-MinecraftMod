@@ -1,4 +1,4 @@
-package sm.lavenderbiome.item.custom;
+package sm.lavenderbiome.item;
 
 import net.minecraft.component.type.ConsumableComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;

@@ -37,6 +37,9 @@ public class ModGroups {
                         entries.add(ModItems.LAVENDRITE_SHOVEL);
                         entries.add(ModItems.LAVENDRITE_HOE);
 
+                        // Custom Tools
+                        entries.add(ModItems.LAVENDRITE_CROSSPICK);
+
                     })).build());
 
     public static void registerItemGroups() {

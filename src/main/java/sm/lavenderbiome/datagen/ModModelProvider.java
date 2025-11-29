@@ -37,5 +37,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LAVENDRITE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.LAVENDRITE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.LAVENDRITE_HOE, Models.HANDHELD);
+        //custom tools
+        itemModelGenerator.register(ModItems.LAVENDRITE_CROSSPICK, Models.HANDHELD);
     }
 }

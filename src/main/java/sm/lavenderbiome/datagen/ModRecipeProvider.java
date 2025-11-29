@@ -114,6 +114,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.LAVENDRITE_INGOT), conditionsFromItem(ModItems.LAVENDRITE_INGOT))
                         .offerTo(exporter);
 
+                //custom tools
+                createShaped(RecipeCategory.TOOLS, ModItems.LAVENDRITE_CROSSPICK)
+                        .pattern(" # ")
+                        .pattern("#S#")
+                        .pattern(" # ")
+                        .input('#', ModItems.LAVENDRITE_INGOT)
+                        .input('S', STICK)
+                        .criterion(hasItem(ModItems.LAVENDRITE_INGOT), conditionsFromItem(ModItems.LAVENDRITE_INGOT))
+                        .offerTo(exporter);
+
             }
         };
     }
