@@ -33,6 +33,6 @@ public class LavenderBiome implements ModInitializer {
         PlayerBlockBreakEvents.BEFORE.register(new CrosspickUsageEvent());
 
         CompostingChanceRegistry.INSTANCE.add(ModItems.LAVENDER_SEEDS, 0.3F);
-        CompostingChanceRegistry.INSTANCE.add(ModItems.LAVENDER, 0.5F);
+        CompostingChanceRegistry.INSTANCE.add(ModBlocks.LAVENDER, 0.5F);
 	}
 }

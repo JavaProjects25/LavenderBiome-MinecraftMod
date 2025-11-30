@@ -51,7 +51,7 @@ public class ModItems {
     );
 
     // Plants
-    public static final Item LAVENDER = registerItem("lavender", Item::new);
+    //public static final Item LAVENDER = registerItem("lavender", Item::new);
 
     //tools
     public static final Item LAVENDRITE_SWORD = registerItem("lavendrite_sword",
@@ -67,24 +67,15 @@ public class ModItems {
 
     //custom tools
     public static final Item LAVENDRITE_CROSSPICK = registerItem("lavendrite_crosspick",
-            settings -> new CrosspickItem(ModToolMaterials.LAVENDRITE, 7.0F, -4.0f, settings));
+            settings -> new CrosspickItem(ModToolMaterials.LAVENDRITE, 7.0F, -3.5f, settings));
 
-    //seeds
-    public static final Item LAVENDER_SEEDS = registerItem("lavender_seeds", createBlockItemWithUniqueName(Block.)
-
-    public static final Item WHEAT_SEEDS = register("wheat_seeds", createBlockItemWithUniqueName(Blocks.WHEAT));
-    private static Function<Item.Settings, Item> createBlockItemWithUniqueName(ModBlocks block) {
-        return settings -> new BlockItem(block, settings.useItemPrefixedTranslationKey());
-    }
+    // Seeds
+    public static final Item LAVENDER_SEEDS = registerItem("lavender_seeds",
+            settings -> new BlockItem(ModBlocks.LAVENDER_CROP, settings));
 
     // Helper method to register items.
-    // // How it works is that it takes in the name of the item and the item instance,
-    // // then it registers the item in the Minecraft item registry using the provided name and instance.
-    /*private static Item registerItem(String name, Item.Settings itemSettings) {
-        RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(LavenderBiome.MOD_ID, name));
-        Item item = new Item(itemSettings.registryKey(key));
-        return Registry.register(Registries.ITEM, key, item);
-    }*/ // ^ OLD WAY
+        // How it works is that it takes in the name of the item and the item instance,
+        // then it registers the item in the Minecraft item registry using the provided name and instance.
 
     private static Item registerItem(String name, Function<Item.Settings, Item> function) {
         return Registry.register(Registries.ITEM, Identifier.of(LavenderBiome.MOD_ID, name),
@@ -96,8 +87,6 @@ public class ModItems {
         return Registry.register(Registries.ITEM, Identifier.of(LavenderBiome.MOD_ID, name),
                 factory.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(LavenderBiome.MOD_ID, name)))));
     }
-
-
 
     // Method to register all mod items.
     public static void registerModItems() {
@@ -112,7 +101,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(LAVENDER_LATTE);
             entries.add(LAVENDER_SEEDS);
-            entries.add(LAVENDER);
+            //entries.add(LAVENDER);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(LAVENDRITE_SWORD);

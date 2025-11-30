@@ -3,6 +3,7 @@ package sm.lavenderbiome.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -32,10 +33,21 @@ public class ModBlocks {
             (settings -> new ExperienceDroppingBlock(UniformIntProvider.create(3, 7), settings)),
             AbstractBlock.Settings.create().mapColor(MapColor.PURPLE).strength(4.5F, 6F).sounds(BlockSoundGroup.DEEPSLATE).requiresTool());
 
+    // Plants
     public static final Block LAVENDER_CROP = registerBlockWithoutBlockItem("lavender_crop",
             properties -> new LavenderCropBlock(properties.noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)
                     .pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block LAVENDER = registerFactoryBlock("lavender",
+            settings -> new FlowerBlock(StatusEffects.HASTE, 3.0F, settings),
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PURPLE)
+                    .noCollision()
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.AZALEA_LEAVES)
+                    .offset(AbstractBlock.OffsetType.XZ)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+    );
 
     // Factory design method to create blocks with custom settings.
     private static Block registerFactoryBlock(String name, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
@@ -87,6 +99,10 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries ->{
             entries.add(ModBlocks.LAVENDER_CROP);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries ->{
+            entries.add(ModBlocks.LAVENDER);
         });
     }
 }

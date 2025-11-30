@@ -27,10 +27,12 @@ public class ModGroups {
                         entries.add(ModBlocks.DEEPSLATE_LAVENDRITE_ORE);
                         entries.add(ModBlocks.RAW_LAVENDRITE_BLOCK);
 
+                        // Natural
+                        entries.add(ModBlocks.LAVENDER);
+
                         // Food & Drink
                         entries.add(ModItems.LAVENDER_LATTE);
                         entries.add(ModItems.LAVENDER_SEEDS);
-                        entries.add(ModItems.LAVENDER);
 
                         // Tools
                         entries.add(ModItems.LAVENDRITE_SWORD);

@@ -9,5 +9,6 @@ public class LavenderBiomeClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.putBlock(ModBlocks.LAVENDER_CROP, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.LAVENDER, BlockRenderLayer.CUTOUT);
     }
 }

@@ -41,7 +41,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.LAVENDER_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(LavenderCropBlock.AGE, LavenderCropBlock.MAX_AGE));
-        this.addDrop(ModBlocks.LAVENDER_CROP, this.cropDrops(ModBlocks.LAVENDER_CROP, ModItems.LAVENDER, ModItems.LAVENDER_SEEDS, builder));
+        this.addDrop(ModBlocks.LAVENDER_CROP, this.cropDrops(ModBlocks.LAVENDER_CROP, Item.fromBlock(ModBlocks.LAVENDER), ModItems.LAVENDER_SEEDS, builder));
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
