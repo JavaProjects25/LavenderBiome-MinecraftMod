@@ -1,7 +1,6 @@
 package sm.lavenderbiome.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.item.Item;
@@ -70,12 +69,9 @@ public class ModItems {
             settings -> new CrosspickItem(ModToolMaterials.LAVENDRITE, 7.0F, -4.0f, settings));
 
     //seeds
-    public static final Item LAVENDER_SEEDS = registerItem("lavender_seeds", createBlockItemWithUniqueName(Block.)
+    public static final Item LAVENDER_SEEDS = registerItem("lavender_seeds",
+            settings -> new BlockItem(ModBlocks.LAVENDER_CROP, settings));
 
-    public static final Item WHEAT_SEEDS = register("wheat_seeds", createBlockItemWithUniqueName(Blocks.WHEAT));
-    private static Function<Item.Settings, Item> createBlockItemWithUniqueName(ModBlocks block) {
-        return settings -> new BlockItem(block, settings.useItemPrefixedTranslationKey());
-    }
 
     // Helper method to register items.
     // // How it works is that it takes in the name of the item and the item instance,
