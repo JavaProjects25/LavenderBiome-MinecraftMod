@@ -1,13 +1,28 @@
 package sm.lavenderbiome.world;
 
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
+import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntryList;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.IntProvider;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.BushFoliagePlacer;
+import net.minecraft.world.gen.foliage.PineFoliagePlacer;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
+import net.minecraft.world.gen.trunk.UpwardsBranchingTrunkPlacer;
 import sm.lavenderbiome.LavenderBiome;
 import sm.lavenderbiome.block.ModBlocks;
 
@@ -27,13 +42,17 @@ public class ModConfiguredFeatures {
             configuration = how that thing should look or behave.
     */
 
-    public static final RegistryKey<ConfiguredFeature<?,?>> LAVENDRITE_ORE_KEY = registerKey("lavendrite_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> LAVENDRITE_ORE_KEY = registerKey("lavendrite_ore");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> LAVENDERWOOD_KEY = registerKey("lavenderwood");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
-        // Defining rules for generation so things arent our of place
+        // Defining rules for generation so things aren't out of place
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
+        // We need this lookup to tell the branching tree what blocks it can poke through (leaves/vines)
+        RegistryEntryLookup<Block> blockRegistry = context.getRegistryLookup(RegistryKeys.BLOCK);
 
         //the ores that can go in normal will be replaced by lavendrite ore and the ores that go in deepslate will be replaced by deepslate lavendrite ore
         // (Lavendrite Ores get added to the list of all ores in Minecraft that can spawn in stone and deepslate)
@@ -44,6 +63,18 @@ public class ModConfiguredFeatures {
 
         register(context, LAVENDRITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldLavendriteOres, 12));
 
+        register(context, LAVENDERWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                        BlockStateProvider.of(ModBlocks.LAVENDERWOOD_LOG), // Check TrunkPlacerType Class for more
+                        new StraightTrunkPlacer(5, 6, 3),
+                        //new UpwardsBranchingTrunkPlacer(4, 6, 3,
+                                //ConstantIntProvider.create(3), 0.4F, ConstantIntProvider.create(2),
+                                //blockRegistry.getOrThrow(BlockTags.MANGROVE_LOGS_CAN_GROW_THROUGH)),
+
+                BlockStateProvider.of(ModBlocks.LAVENDERWOOD_LEAVES), // Check FoliagePlacerType Class for more
+                //new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3),
+                new PineFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(1), ConstantIntProvider.create(6)),
+
+                new TwoLayersFeatureSize(1, 0, 2)).build());
     }
 
 

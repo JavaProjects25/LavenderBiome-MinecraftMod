@@ -45,6 +45,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         // Drop Lavender after breaking the flower
         addDrop(ModBlocks.LAVENDER);
+
+        // Wood drops
+        addDrop(ModBlocks.LAVENDERWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_LAVENDERWOOD_LOG);
+        addDrop(ModBlocks.LAVENDERWOOD_WOOD);
+        addDrop(ModBlocks.STRIPPED_LAVENDERWOOD_WOOD);
+        addDrop(ModBlocks.LAVENDERWOOD_PLANKS);
+        addDrop(ModBlocks.LAVENDERWOOD_SAPLING);
+        addDrop(ModBlocks.LAVENDERWOOD_LEAVES, leavesDrops(ModBlocks.LAVENDERWOOD_LEAVES, ModBlocks.LAVENDERWOOD_SAPLING, 0.0625f));
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

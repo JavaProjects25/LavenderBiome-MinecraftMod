@@ -6,6 +6,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
+import net.minecraft.client.data.TexturedModel;
 import sm.lavenderbiome.block.ModBlocks;
 import sm.lavenderbiome.block.custom.LavenderCropBlock;
 import sm.lavenderbiome.item.ModItems;
@@ -17,16 +18,24 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        //general blocks
+        // BLOCKS
+            // Mineral Blocks
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVENDRITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_LAVENDRITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVENDRITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_LAVENDRITE_ORE);
+            // Wood Blocks
+        blockStateModelGenerator.createLogTexturePool(ModBlocks.LAVENDERWOOD_LOG).log(ModBlocks.LAVENDERWOOD_LOG).wood(ModBlocks.LAVENDERWOOD_WOOD);
+        blockStateModelGenerator.createLogTexturePool(ModBlocks.STRIPPED_LAVENDERWOOD_LOG).log(ModBlocks.STRIPPED_LAVENDERWOOD_LOG).wood(ModBlocks.STRIPPED_LAVENDERWOOD_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LAVENDERWOOD_PLANKS);
 
-        blockStateModelGenerator.registerTintableCross(ModBlocks.LAVENDER, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        // NATURE
+        blockStateModelGenerator.registerSingleton(ModBlocks.LAVENDERWOOD_LEAVES, TexturedModel.LEAVES);
 
         // Food and plants
         blockStateModelGenerator.registerCrop(ModBlocks.LAVENDER_CROP, LavenderCropBlock.AGE, 0,1,2,3);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.LAVENDER, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.LAVENDERWOOD_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
     }
 
     @Override

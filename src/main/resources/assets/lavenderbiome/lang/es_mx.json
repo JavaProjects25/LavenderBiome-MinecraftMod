@@ -1,10 +1,11 @@
 {
-  "itemgroup.lavender_biome.lavender_biome_group": "Bioma de lavanda",
+  "itemgroup.lavender_biome.lavender_biome_group": "Bioma de Lavanda",
 
 
-  "item.lavenderbiome.lavender_latte": "Latte de lavanda",
+  "item.lavenderbiome.lavender_latte": "Latte de Lavanda",
 
 
+  "item.lavenderbiome.lavender_seeds" : "Semillas de Lavanda",
   "item.lavenderbiome.lavendrite_ingot": "Lingote de lavandrita",
   "item.lavenderbiome.raw_lavendrite": "Lavandrita en bruto",
 
@@ -22,8 +23,17 @@
   "item.lavenderbiome.lavendrite_ore" : "Mineral de lavandrita",
   "item.lavenderbiome.deepslate_lavendrite_ore" : "Mineral de lavandrita de pizarra profunda",
 
+  "item.lavenderbiome.lavenderwood_log" : "Tronco de Lavanda",
+  "item.lavenderbiome.stripped_lavenderwood_log" : "Tronco despojado de Lavanda",
+  "item.lavenderbiome.lavenderwood_wood" : "Madera de Lavanda",
+  "item.lavenderbiome.stripped_lavenderwood_wood" : "Madera despojada de Lavanda",
+  "item.lavenderbiome.lavenderwood_planks" : "Tablones de Lavanda",
+
+
+  "item.lavenderbiome.lavenderwood_leaves" : "Hojas de Lavanda",
+
 
   "item.lavenderbiome.lavender" : "Lavanda",
-  "item.lavenderbiome.lavender_seeds" : "Semillas de lavanda",
-  "item.lavenderbiome.lavender_crop" : "Cultivo de lavanda"
+  "item.lavenderbiome.lavender_crop" : "Cultivo de Lavanda",
+  "item.lavenderbiome.lavenderwood_sapling" : "Retoño de madera de Lavanda"
 }

@@ -25,8 +25,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider  {
 
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RAW_LAVENDRITE_BLOCK)
-                .add(ModBlocks.DEEPSLATE_LAVENDRITE_ORE)
-                ;
+                .add(ModBlocks.DEEPSLATE_LAVENDRITE_ORE);
 
         valueLookupBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.LAVENDRITE_ORE);
@@ -34,9 +33,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider  {
         valueLookupBuilder(ModTags.Blocks.NEEDS_LAVENDRITE_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
 
-
-
-
+        valueLookupBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.LAVENDERWOOD_LOG)
+                .add(ModBlocks.STRIPPED_LAVENDERWOOD_LOG)
+                .add(ModBlocks.LAVENDERWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_LAVENDERWOOD_WOOD);
 
     }
 }

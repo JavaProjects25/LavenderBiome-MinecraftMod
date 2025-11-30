@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import org.jetbrains.annotations.Nullable;
+import sm.lavenderbiome.block.ModBlocks;
 import sm.lavenderbiome.item.ModItems;
 import sm.lavenderbiome.util.ModTags;
 
@@ -35,6 +36,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ItemTags.HOES)
                 .add(ModItems.LAVENDRITE_HOE);
 
+        valueLookupBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.LAVENDERWOOD_LOG.asItem())
+                .add(ModBlocks.STRIPPED_LAVENDERWOOD_LOG.asItem())
+                .add(ModBlocks.LAVENDERWOOD_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_LAVENDERWOOD_WOOD.asItem());
+
+        valueLookupBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.LAVENDERWOOD_PLANKS.asItem());
 
 
     }

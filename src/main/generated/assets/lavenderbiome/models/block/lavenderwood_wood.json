@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "lavenderbiome:block/lavenderwood_log",
+    "side": "lavenderbiome:block/lavenderwood_log"
+  }
+}

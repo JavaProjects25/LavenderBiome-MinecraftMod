@@ -4,9 +4,13 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.minecraft.block.FireBlock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sm.lavenderbiome.block.ModBlocks;
+import sm.lavenderbiome.item.ModGroups;
 import sm.lavenderbiome.item.ModItems;
 import sm.lavenderbiome.util.CrosspickUsageEvent;
 import sm.lavenderbiome.world.gen.ModWorldGeneration;
@@ -40,5 +44,15 @@ public class LavenderBiome implements ModInitializer {
         //register composting chances
         CompostingChanceRegistry.INSTANCE.add(ModItems.LAVENDER_SEEDS, 0.3F);
         CompostingChanceRegistry.INSTANCE.add(ModBlocks.LAVENDER, 0.5F);
+
+        StrippableBlockRegistry.register(ModBlocks.LAVENDERWOOD_LOG, ModBlocks.STRIPPED_LAVENDERWOOD_LOG);
+        StrippableBlockRegistry.register(ModBlocks.LAVENDERWOOD_WOOD, ModBlocks.STRIPPED_LAVENDERWOOD_WOOD);
+
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LAVENDERWOOD_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LAVENDERWOOD_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_LAVENDERWOOD_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_LAVENDERWOOD_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LAVENDERWOOD_PLANKS, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.LAVENDERWOOD_LEAVES, 30, 60);
 	}
 }

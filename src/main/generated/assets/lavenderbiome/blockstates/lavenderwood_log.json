@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "lavenderbiome:block/lavenderwood_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "lavenderbiome:block/lavenderwood_log"
+    },
+    "axis=z": {
+      "model": "lavenderbiome:block/lavenderwood_log_horizontal",
+      "x": 90
+    }
+  }
+}

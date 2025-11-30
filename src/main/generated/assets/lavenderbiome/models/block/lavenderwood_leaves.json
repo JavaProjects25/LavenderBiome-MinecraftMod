@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "lavenderbiome:block/lavenderwood_leaves"
+  }
+}

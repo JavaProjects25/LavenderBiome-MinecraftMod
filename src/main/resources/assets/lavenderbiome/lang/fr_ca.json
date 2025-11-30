@@ -5,6 +5,7 @@
   "item.lavenderbiome.lavender_latte": "Latté à la lavande",
 
 
+  "item.lavenderbiome.lavender_seeds" : "Graines de lavande",
   "item.lavenderbiome.lavendrite_ingot": "Lingot de lavandrite",
   "item.lavenderbiome.raw_lavendrite": "Lavendrite brut",
 
@@ -22,9 +23,17 @@
   "item.lavenderbiome.lavendrite_ore" : "Minerai de lavendrite",
   "item.lavenderbiome.deepslate_lavendrite_ore" : "Minerai de lavandrite de profondoise",
 
+  "item.lavenderbiome.lavenderwood_log" : "Bûche de bois de lavande",
+  "item.lavenderbiome.stripped_lavenderwood_log" : "Bûche de bois de lavande écorcée",
+  "item.lavenderbiome.lavenderwood_wood" : "Bois de lavande",
+  "item.lavenderbiome.stripped_lavenderwood_wood" : "Bois de lavande écorcé",
+  "item.lavenderbiome.lavenderwood_planks" : "Planches de bois de lavande",
+
+
+  "item.lavenderbiome.lavenderwood_leaves" : "Feuilles de bois de lavande",
+
 
   "item.lavenderbiome.lavender" : "Lavande",
-  "item.lavenderbiome.lavender_seeds" : "Graines de lavande",
-  "item.lavenderbiome.lavender_crop" : "Culture de lavande"
-
+  "item.lavenderbiome.lavender_crop" : "Culture de lavande",
+  "item.lavenderbiome.lavenderwood_sapling" : "Bûche de bois de lavande"
 }

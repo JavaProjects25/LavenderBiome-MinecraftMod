@@ -5,6 +5,7 @@
   "item.lavenderbiome.lavender_latte": "Lavender Latte",
 
 
+  "item.lavenderbiome.lavender_seeds" : "Lavender Seeds",
   "item.lavenderbiome.lavendrite_ingot": "Lavendrite Ingot",
   "item.lavenderbiome.raw_lavendrite": "Raw Lavendrite",
 
@@ -17,15 +18,22 @@
   "item.lavenderbiome.lavendrite_crosspick": "Lavendrite Crosspick",
 
 
-
   "item.lavenderbiome.lavendrite_block": "Block of Lavendrite",
   "item.lavenderbiome.raw_lavendrite_block": "Raw Lavendrite Block",
   "item.lavenderbiome.lavendrite_ore" : "Lavendrite Ore",
   "item.lavenderbiome.deepslate_lavendrite_ore" : "Deepslate Lavendrite Ore",
 
+  "item.lavenderbiome.lavenderwood_log" : "Lavenderwood Log",
+  "item.lavenderbiome.stripped_lavenderwood_log" : "Stripped Lavenderwood Log",
+  "item.lavenderbiome.lavenderwood_wood" : "Lavenderwood Wood",
+  "item.lavenderbiome.stripped_lavenderwood_wood" : "Stripped Lavenderwood Wood",
+  "item.lavenderbiome.lavenderwood_planks" : "Lavenderwood Planks",
+
+
+  "item.lavenderbiome.lavenderwood_leaves" : "Lavenderwood Leaves",
+
 
   "item.lavenderbiome.lavender" : "Lavender",
-  "item.lavenderbiome.lavender_seeds" : "Lavender Seeds",
-  "item.lavenderbiome.lavender_crop" : "Lavender Crop"
-
+  "item.lavenderbiome.lavender_crop" : "Lavender Crop",
+  "item.lavenderbiome.lavenderwood_sapling" : "Lavenderwood Sapling"
 }

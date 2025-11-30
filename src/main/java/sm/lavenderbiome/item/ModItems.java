@@ -98,10 +98,10 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(LAVENDRITE_INGOT);
             entries.add(RAW_LAVENDRITE);
+            entries.add(LAVENDER_SEEDS);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(LAVENDER_LATTE);
-            entries.add(LAVENDER_SEEDS);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(LAVENDRITE_SWORD);
