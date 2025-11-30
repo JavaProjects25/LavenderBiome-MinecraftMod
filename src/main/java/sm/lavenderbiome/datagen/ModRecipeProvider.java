@@ -50,7 +50,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("###")
                         .pattern("SGS")
                         .pattern(" M ")
-                        .input('#', ModItems.LAVENDRITE_INGOT)
+                        .input('#', ModBlocks.LAVENDER)
                         .input('S', SUGAR)
                         .input('M', MILK_BUCKET)
                         .input('G', GLASS_BOTTLE)
