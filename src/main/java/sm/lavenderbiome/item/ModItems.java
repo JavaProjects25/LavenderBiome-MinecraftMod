@@ -16,6 +16,7 @@ import net.minecraft.util.Rarity;
 import sm.lavenderbiome.LavenderBiome;
 import sm.lavenderbiome.block.ModBlocks;
 import sm.lavenderbiome.item.custom.CrosspickItem;
+import sm.lavenderbiome.item.custom.LavenderLatteItem;
 
 import java.util.function.Function;
 
@@ -43,7 +44,7 @@ public class ModItems {
             .component(DataComponentTypes.ENCHANTMENT_GLINT_OVERRIDE, true)
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(LavenderBiome.MOD_ID, "lavender_latte")))));*/ //
 
-    public static final Item LAVENDER_LATTE = registerCustomItem("lavender_latte", setting -> new Item(setting
+    public static final Item LAVENDER_LATTE = registerCustomItem("lavender_latte", setting -> new LavenderLatteItem(setting
             .food(ModFoodComponents.LAVENDER_LATTE, ModConsumableComponents.LAVENDER_LATTE)
             .maxCount(16)
             .rarity(Rarity.RARE)
@@ -101,7 +102,6 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(LAVENDER_LATTE);
             entries.add(LAVENDER_SEEDS);
-            //entries.add(LAVENDER);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(LAVENDRITE_SWORD);
@@ -112,6 +112,9 @@ public class ModItems {
             entries.add(LAVENDRITE_SHOVEL);
             entries.add(LAVENDRITE_HOE);
             entries.add(LAVENDRITE_CROSSPICK);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(ModBlocks.LAVENDER);
         });
     }
 }

@@ -11,7 +11,7 @@ public class ModConsumableComponents {
 
     public static final ConsumableComponent LAVENDER_LATTE = drink().consumeEffect(
                     new ApplyEffectsConsumeEffect(
-                            new StatusEffectInstance(StatusEffects.HASTE, 200, 0), 1.0f))
+                            new StatusEffectInstance(StatusEffects.HASTE, 1000, 0), 1.0f))
             .build();
 
     public static ConsumableComponent.Builder drink() {
