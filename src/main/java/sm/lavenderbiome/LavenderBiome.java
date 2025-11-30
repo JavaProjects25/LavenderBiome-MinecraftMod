@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import sm.lavenderbiome.block.ModBlocks;
 import sm.lavenderbiome.item.ModItems;
 import sm.lavenderbiome.util.CrosspickUsageEvent;
+import sm.lavenderbiome.world.gen.ModWorldGeneration;
 
 public class LavenderBiome implements ModInitializer {
 
@@ -30,8 +31,13 @@ public class LavenderBiome implements ModInitializer {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
 
+        //initialize world generation
+        ModWorldGeneration.generateModWorldGen();
+
+        //register crosspick event
         PlayerBlockBreakEvents.BEFORE.register(new CrosspickUsageEvent());
 
+        //register composting chances
         CompostingChanceRegistry.INSTANCE.add(ModItems.LAVENDER_SEEDS, 0.3F);
         CompostingChanceRegistry.INSTANCE.add(ModBlocks.LAVENDER, 0.5F);
 	}
