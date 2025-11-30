@@ -7,8 +7,7 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 import sm.lavenderbiome.LavenderBiome;
 import sm.lavenderbiome.block.ModBlocks;
 
@@ -20,6 +19,7 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> LAVENDERWOOD_PLACED_KEY = registryKey("lavenderwood_placed");
     
+    public static final RegistryKey<PlacedFeature> LAVENDER_PLACED_KEY = registryKey("lavender_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         //tying it to the configured feature
@@ -33,6 +33,19 @@ public class ModPlacedFeatures {
         register(context, LAVENDERWOOD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LAVENDERWOOD_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(2, 0.1f, 2), ModBlocks.LAVENDERWOOD_SAPLING));
+
+
+        register(
+                context,
+                LAVENDER_PLACED_KEY,
+                configuredFeatures.getOrThrow(ModConfiguredFeatures.LAVENDER_KEY),
+                List.of(
+                        CountPlacementModifier.of(3), // Try this many times per chunk
+                        SquarePlacementModifier.of(),
+                        PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP,
+                        BiomePlacementModifier.of()
+                ));
+
     }
 
     public static RegistryKey<PlacedFeature> registryKey(String name){

@@ -8,6 +8,7 @@ import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.entry.RegistryEntryList;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
@@ -46,6 +47,8 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> LAVENDERWOOD_KEY = registerKey("lavenderwood");
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> LAVENDER_KEY = registerKey("lavender");
+
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         // Defining rules for generation so things aren't out of place
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -75,6 +78,23 @@ public class ModConfiguredFeatures {
                 new PineFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(1), ConstantIntProvider.create(6)),
 
                 new TwoLayersFeatureSize(1, 0, 2)).build());
+
+
+        /*
+        register(context, LAVENDER_FLOWER_KEY,
+                Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LAVENDER)));
+
+         */
+
+        register(context, LAVENDER_KEY, Feature.RANDOM_PATCH, new RandomPatchFeatureConfig(
+                48, // Tries: High number = dense patch, Low number = sparse
+                12,  // XZ Spread
+                2,  // Y Spread
+                PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LAVENDER)))
+        ));
+
     }
 
 

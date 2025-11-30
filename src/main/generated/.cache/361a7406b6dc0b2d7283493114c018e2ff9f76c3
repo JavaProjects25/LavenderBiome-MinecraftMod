@@ -1,5 +1,7 @@
 // 1.21.10	-999999999-01-01T00:00:00	LavenderBiome/
+3abcf606df9aaea791e81b9080b2334ba8f0ec2d data/lavenderbiome/worldgen/configured_feature/lavender.json
 39f06644ec5c7838f707b8a28cba1982e5fdedcc data/lavenderbiome/worldgen/configured_feature/lavenderwood.json
 b8473ef293ae139badb27e6eb675ad40d475dc0e data/lavenderbiome/worldgen/configured_feature/lavendrite_ore.json
+4e4d129d45a2d85982859ad48bbf0f2d5f24e95e data/lavenderbiome/worldgen/placed_feature/lavender_placed.json
 db35e83e226f37f67739ca5687f1c79958480d65 data/lavenderbiome/worldgen/placed_feature/lavenderwood_placed.json
 4dcad46d018a10364f6f9717a93a5efeb26bce17 data/lavenderbiome/worldgen/placed_feature/lavendrite_ore_placed.json
