@@ -6,19 +6,20 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.YOffset;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.PlacedFeature;
+import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import sm.lavenderbiome.LavenderBiome;
+import sm.lavenderbiome.block.ModBlocks;
 
 import java.util.List;
 
 public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> LAVENDRITE_ORE_PLACED_KEY = registryKey("lavendrite_ore_placed");
+
+    public static final RegistryKey<PlacedFeature> LAVENDERWOOD_PLACED_KEY = registryKey("lavenderwood_placed");
+    
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         //tying it to the configured feature
@@ -27,8 +28,11 @@ public class ModPlacedFeatures {
         register(context, LAVENDRITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LAVENDRITE_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(14,
                         //Y levels to find the ore
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80)
-                        )));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+
+        register(context, LAVENDERWOOD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LAVENDERWOOD_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(2, 0.1f, 2), ModBlocks.LAVENDERWOOD_SAPLING));
     }
 
     public static RegistryKey<PlacedFeature> registryKey(String name){
