@@ -51,7 +51,6 @@ public class ModBiomes {
     private static SpawnSettings mobSpawns() {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
         
-
         spawnBuilder.spawn(SpawnGroup.CREATURE, 4, new SpawnSettings.SpawnEntry(EntityType.RABBIT, 2, 4));
         spawnBuilder.spawn(SpawnGroup.CREATURE, 30, new SpawnSettings.SpawnEntry(EntityType.SHEEP, 4, 12));
         spawnBuilder.spawn(SpawnGroup.CREATURE, 8, new SpawnSettings.SpawnEntry(EntityType.PIG, 4, 4));
