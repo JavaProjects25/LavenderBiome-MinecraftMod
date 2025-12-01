@@ -3,7 +3,7 @@ package sm.lavenderbiome.world.gen;
 public class ModWorldGeneration {
 
     public static void generateModWorldGen() {
-        //ModOreGeneration.generateOres();
+        ModOreGeneration.generateOres();
         ModTreeGeneration.generateTrees();
         ModFlowersGeneration.generateFlowers();
     }

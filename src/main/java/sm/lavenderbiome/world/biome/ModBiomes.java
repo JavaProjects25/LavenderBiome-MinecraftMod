@@ -6,7 +6,6 @@ import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BiomeMoodSound;
-import net.minecraft.sound.MusicSound;
 import net.minecraft.sound.MusicType;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
@@ -16,76 +15,95 @@ import net.minecraft.world.biome.GenerationSettings;
 import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
-import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 import sm.lavenderbiome.LavenderBiome;
 import sm.lavenderbiome.world.ModPlacedFeatures;
 
 public class ModBiomes {
     public static final RegistryKey<Biome> LAVENDER_BIOME = RegistryKey.of(RegistryKeys.BIOME,
-            Identifier.of(LavenderBiome.MOD_ID, "lavender_biome"));
+            Identifier.of(LavenderBiome.MOD_ID, "lavenderbiome"));
+
+    //colors
+    private static final int WATER_COLOR = 0x5DB7EF;
+    private static final int WATER_FOG_COLOR = 0x264D67;
+
+    private static final int SKY_COLOR = 0xE0D4FC;
+    private static final int FOG_COLOR = 0xD2C2F7;
+    private static final int GRASS_COLOR = 0xB69FDB;
+    private static final int FOLIAGE_COLOR = 0x9B86C4;
 
     public static void bootstrap(Registerable<Biome> context) {
-        context.register(LAVENDER_BIOME, lavenderBiome(context));
+        context.register(LAVENDER_BIOME, createLavenderBiome(context));
     }
 
-    public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
-        DefaultBiomeFeatures.addLandCarvers(builder);
-        DefaultBiomeFeatures.addAmethystGeodes(builder);
-        DefaultBiomeFeatures.addDungeons(builder);
-        DefaultBiomeFeatures.addMineables(builder);
-        DefaultBiomeFeatures.addSprings(builder);
-        DefaultBiomeFeatures.addFrozenTopLayer(builder);
-    }
-
-    public static Biome lavenderBiome(Registerable<Biome> context) {
-        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-
-        // Mobs
-        DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
-        DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
-        spawnBuilder.spawn(SpawnGroup.AXOLOTLS, 10, new SpawnSettings.SpawnEntry(EntityType.AXOLOTL, 4, 6));
-
-        GenerationSettings.LookupBackedBuilder biomeBuilder =
-                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
-                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
-
-        // 1. Global Stuff (Caves, etc.)
-        globalOverworldGeneration(biomeBuilder);
-        DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
-
-        // 2. Ores
-        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
-        DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
-        biomeBuilder.feature(GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.LAVENDRITE_ORE_PLACED_KEY);
-
-        // 3. Vegetation (Trees & Flowers)
-        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.LAVENDERWOOD_PLACED_KEY);
-
-        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.LAVENDER_PLACED_KEY);
-
-        DefaultBiomeFeatures.addForestFlowers(biomeBuilder);
-        DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
-        DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
-        DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder, false);
-
-        MusicSound musicSound = MusicType.createIngameMusic(SoundEvents.MUSIC_OVERWORLD_GROVE);
-
+    public static Biome createLavenderBiome(Registerable<Biome> context) {
         return new Biome.Builder()
                 .precipitation(true)
                 .downfall(0.4f)
                 .temperature(0.7f)
-                .generationSettings(biomeBuilder.build())
-                .spawnSettings(spawnBuilder.build())
-                .effects((new BiomeEffects.Builder())
-                        .waterColor(0xe82e3b)
-                        .waterFogColor(0xbf1b26)
-                        .skyColor(0x30c918)
-                        .grassColor(0xdfc5fe)
-                        .foliageColor(0x967bb6)
-                        .fogColor(0x22a1e6)
-                        .moodSound(BiomeMoodSound.CAVE)
-                        .music(musicSound)
-                        .build())
+                .generationSettings(biomeGeneration(context))
+                .spawnSettings(mobSpawns())
+                .effects(biomeEffects())
+                .build();
+    }
+
+
+    // 1. MOBS
+    private static SpawnSettings mobSpawns() {
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
+        
+
+        spawnBuilder.spawn(SpawnGroup.CREATURE, 4, new SpawnSettings.SpawnEntry(EntityType.RABBIT, 2, 4));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, 30, new SpawnSettings.SpawnEntry(EntityType.SHEEP, 4, 12));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, 8, new SpawnSettings.SpawnEntry(EntityType.PIG, 4, 4));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, 10, new SpawnSettings.SpawnEntry(EntityType.CHICKEN, 4, 8));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, 4, new SpawnSettings.SpawnEntry(EntityType.GOAT, 4, 8));
+
+        DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
+
+        return spawnBuilder.build();
+    }
+
+    // 2. WORLD GEN
+    private static GenerationSettings biomeGeneration(Registerable<Biome> context) {
+        GenerationSettings.LookupBackedBuilder biomeBuilder =
+                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
+                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
+
+        // Global Settings
+        DefaultBiomeFeatures.addLandCarvers(biomeBuilder);
+        DefaultBiomeFeatures.addAmethystGeodes(biomeBuilder);
+        DefaultBiomeFeatures.addDungeons(biomeBuilder);
+        DefaultBiomeFeatures.addMineables(biomeBuilder);
+        DefaultBiomeFeatures.addSprings(biomeBuilder);
+        DefaultBiomeFeatures.addFrozenTopLayer(biomeBuilder);
+        DefaultBiomeFeatures.addBushes(biomeBuilder);
+
+        // Ores
+        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
+        biomeBuilder.feature(GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.LAVENDRITE_ORE_PLACED_KEY);
+
+        // Vegetation
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.LAVENDERWOOD_PLACED_KEY);
+        biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.LAVENDER_PLACED_KEY);
+
+        // Standard decoration (Grass, mushrooms)
+        DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
+        DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder, false);
+
+        return biomeBuilder.build();
+    }
+
+    // 3. VISUALS & SOUNDS
+    private static BiomeEffects biomeEffects() {
+        return new BiomeEffects.Builder()
+                .waterColor(WATER_COLOR)
+                .waterFogColor(WATER_FOG_COLOR)
+                .skyColor(SKY_COLOR)
+                .grassColor(GRASS_COLOR)
+                .foliageColor(FOLIAGE_COLOR)
+                .fogColor(FOG_COLOR)
+                .moodSound(BiomeMoodSound.CAVE)
+                .music(MusicType.createIngameMusic(SoundEvents.MUSIC_OVERWORLD_CHERRY_GROVE))
                 .build();
     }
 }

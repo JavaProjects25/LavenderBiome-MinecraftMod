@@ -3,7 +3,8 @@
 	"package": "sm.lavenderbiome.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+        "LavenderSheepMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

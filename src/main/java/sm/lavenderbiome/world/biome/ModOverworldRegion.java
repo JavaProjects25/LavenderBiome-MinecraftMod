@@ -38,7 +38,7 @@ public class ModOverworldRegion extends Region {
                 .continentalness(Continentalness.INLAND)
                 .erosion(Erosion.EROSION_0, Erosion.EROSION_1)
                 .depth(Depth.SURFACE, Depth.FLOOR)
-                .weirdness(Weirdness.MID_SLICE_NORMAL_ASCENDING, Weirdness.MID_SLICE_NORMAL_DESCENDING)
+                .weirdness(Weirdness.VALLEY, Weirdness.VALLEY)
                 .build().forEach(point -> builder.add(point, ModBiomes.LAVENDER_BIOME));
 
         // Add our points to the mapper

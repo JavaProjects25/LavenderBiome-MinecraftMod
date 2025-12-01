@@ -6,9 +6,9 @@
   ],
   "downfall": 0.4,
   "effects": {
-    "fog_color": 2269670,
-    "foliage_color": 9862070,
-    "grass_color": 14665214,
+    "fog_color": 13812471,
+    "foliage_color": 10192580,
+    "grass_color": 11968475,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
@@ -21,15 +21,15 @@
           "max_delay": 24000,
           "min_delay": 12000,
           "replace_current_music": false,
-          "sound": "minecraft:music.overworld.grove"
+          "sound": "minecraft:music.overworld.cherry_grove"
         },
         "weight": 1
       }
     ],
     "music_volume": 1.0,
-    "sky_color": 3197208,
-    "water_color": 15216187,
-    "water_fog_color": 12524326
+    "sky_color": 14734588,
+    "water_color": 6141935,
+    "water_fog_color": 2510183
   },
   "features": [
     [],
@@ -38,8 +38,7 @@
       "minecraft:lake_lava_surface"
     ],
     [
-      "minecraft:amethyst_geode",
-      "minecraft:forest_rock"
+      "minecraft:amethyst_geode"
     ],
     [
       "minecraft:monster_room",
@@ -74,7 +73,6 @@
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
-      "minecraft:ore_gold_extra",
       "lavenderbiome:lavendrite_ore_placed"
     ],
     [],
@@ -84,10 +82,9 @@
     ],
     [
       "minecraft:glow_lichen",
+      "minecraft:patch_bush",
       "lavenderbiome:lavenderwood_placed",
       "lavenderbiome:lavender_placed",
-      "minecraft:forest_flowers",
-      "minecraft:patch_large_fern",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_pumpkin"
@@ -107,38 +104,37 @@
         "weight": 10
       }
     ],
-    "axolotls": [
-      {
-        "type": "minecraft:axolotl",
-        "maxCount": 6,
-        "minCount": 4,
-        "weight": 10
-      }
-    ],
+    "axolotls": [],
     "creature": [
       {
-        "type": "minecraft:sheep",
+        "type": "minecraft:rabbit",
         "maxCount": 4,
+        "minCount": 2,
+        "weight": 4
+      },
+      {
+        "type": "minecraft:sheep",
+        "maxCount": 12,
         "minCount": 4,
-        "weight": 12
+        "weight": 30
       },
       {
         "type": "minecraft:pig",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 10
+        "weight": 8
       },
       {
         "type": "minecraft:chicken",
-        "maxCount": 4,
+        "maxCount": 8,
         "minCount": 4,
         "weight": 10
       },
       {
-        "type": "minecraft:cow",
-        "maxCount": 4,
+        "type": "minecraft:goat",
+        "maxCount": 8,
         "minCount": 4,
-        "weight": 8
+        "weight": 4
       }
     ],
     "misc": [],
