@@ -23,6 +23,9 @@
     ],
     "client": [
       "sm.lavenderbiome.LavenderBiomeClient"
+    ],
+    "terrablender": [
+      "sm.lavenderbiome.world.biome.ModTerrablenderAPI"
     ]
   },
   "mixins": [

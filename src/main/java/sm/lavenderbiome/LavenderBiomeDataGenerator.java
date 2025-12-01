@@ -7,6 +7,7 @@ import net.minecraft.registry.RegistryKeys;
 import sm.lavenderbiome.datagen.*;
 import sm.lavenderbiome.world.ModConfiguredFeatures;
 import sm.lavenderbiome.world.ModPlacedFeatures;
+import sm.lavenderbiome.world.biome.ModBiomes;
 
 public class LavenderBiomeDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -28,5 +29,6 @@ public class LavenderBiomeDataGenerator implements DataGeneratorEntrypoint {
 
         registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
         registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
     }
 }
