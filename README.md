@@ -13,7 +13,7 @@
 - **New Biome:** The **Lavender Biome**, featuring custom generation and purple/pink sheep variants.
 - **Custom Items:** **Lavendrite Ingot**, **Lavender Latte** (consumable giving Haste), and the **Crosspick** (a tool that mines a 5 block area in a + sign formation).
 - **New Blocks:** **Lavenderwood** tree set (logs, planks, leaves) and **Lavendrite Ore**.
-- **Localization:** Localization into en_ca, fr_ca, es_mx.
+- **Localization:** Localization into English, French, and Spanish.
 
 ## 📌 Requirements
 
