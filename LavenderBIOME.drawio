@@ -1,0 +1,213 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.1.1">
+  <diagram id="3_vx7sJtQMhWNGYfGhIQ" name="Page-1">
+    <mxGraphModel grid="1" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="1654" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="node13" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModConfiguredFeatures&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModConfiguredFeatures(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ bootstrap(Registerable&amp;lt;ConfiguredFeature&amp;lt;?, ?&amp;gt;&amp;gt;): void&lt;br/&gt;+ registerKey(String): RegistryKey&amp;lt;ConfiguredFeature&amp;lt;?, ?&amp;gt;&amp;gt;&lt;br/&gt;- register(Registerable&amp;lt;ConfiguredFeature&amp;lt;?, ?&amp;gt;&amp;gt;, RegistryKey&amp;lt;ConfiguredFeature&amp;lt;?, ?&amp;gt;&amp;gt;, F, FC): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="139" width="657" x="1460" y="-850" as="geometry" />
+        </mxCell>
+        <mxCell id="node18" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModConsumableComponents&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModConsumableComponents(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ drink(): Builder&lt;/p&gt;" vertex="1">
+          <mxGeometry height="104" width="223" x="450" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="node24" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModFoodComponents&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModFoodComponents(): &lt;/p&gt;" vertex="1">
+          <mxGeometry height="58" width="170.5" x="-430" y="741" as="geometry" />
+        </mxCell>
+        <mxCell id="node9" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModGroups&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModGroups(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ registerItemGroups(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="183" x="-170" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="node6" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModItems&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModItems(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ registerModItems(): void&lt;br/&gt;- registerItem(String, Function&amp;lt;Settings, Item&amp;gt;): Item&lt;br/&gt;- registerCustomItem(String, Function&amp;lt;Settings, T&amp;gt;): T&lt;/p&gt;" vertex="1">
+          <mxGeometry height="150" width="347" x="80" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="node36" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModOrePlacement&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModOrePlacement(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ modifiersWithCount(int, PlacementModifier): List&amp;lt;PlacementModifier&amp;gt;&lt;br/&gt;+ modifiers(PlacementModifier, PlacementModifier): List&amp;lt;PlacementModifier&amp;gt;&lt;br/&gt;+ modifiersWithRarity(int, PlacementModifier): List&amp;lt;PlacementModifier&amp;gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="150" width="491" x="1543" y="-670" as="geometry" />
+        </mxCell>
+        <mxCell id="node1" parent="1" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModPlacedFeatures&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModPlacedFeatures(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ registryKey(String): RegistryKey&amp;lt;PlacedFeature&amp;gt;&lt;br/&gt;- register(Registerable&amp;lt;PlacedFeature&amp;gt;, RegistryKey&amp;lt;PlacedFeature&amp;gt;, RegistryEntry&amp;lt;ConfiguredFeature&amp;lt;?, ?&amp;gt;&amp;gt;, List&amp;lt;PlacementModifier&amp;gt;): void&lt;br/&gt;- register(Registerable&amp;lt;PlacedFeature&amp;gt;, RegistryKey&amp;lt;PlacedFeature&amp;gt;, RegistryEntry&amp;lt;ConfiguredFeature&amp;lt;?, ?&amp;gt;&amp;gt;, PlacementModifier[]): void&lt;br/&gt;+ bootstrap(Registerable&amp;lt;PlacedFeature&amp;gt;): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="170" width="917" x="1330" y="-1060" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-11" parent="1" style="swimlane;startSize=0;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="1620" width="2316" x="-36" y="-1370" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-10" parent="C2ex4ajUAVZv9EfkUBmz-11" style="text;html=1;whiteSpace=wrap;strokeColor=#001DBC;fillColor=#0050ef;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="&lt;span style=&quot;font-size: 36px;&quot;&gt;World&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="127" x="36" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-8" parent="C2ex4ajUAVZv9EfkUBmz-11" style="swimlane;startSize=0;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="120" width="540" x="306" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-9" parent="C2ex4ajUAVZv9EfkUBmz-8" style="text;html=1;whiteSpace=wrap;strokeColor=#2D7600;fillColor=#60a917;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Tree&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="103" x="80" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="node19" parent="C2ex4ajUAVZv9EfkUBmz-8" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModSaplingGenerator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModSaplingGenerator(): &lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="173" x="250" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-3" parent="C2ex4ajUAVZv9EfkUBmz-11" style="swimlane;startSize=0;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="280" width="1130" x="126" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-1" parent="C2ex4ajUAVZv9EfkUBmz-3" style="text;html=1;whiteSpace=wrap;strokeColor=#B09500;fillColor=#e3c800;align=center;verticalAlign=middle;rounded=0;fontColor=#000000;" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Gen&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="103" x="43" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="node23" parent="C2ex4ajUAVZv9EfkUBmz-3" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModFlowersGeneration&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModFlowersGeneration(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ generateFlowers(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="102" width="232" x="50" y="129" as="geometry" />
+        </mxCell>
+        <mxCell id="node4" parent="C2ex4ajUAVZv9EfkUBmz-3" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModOreGeneration&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModOreGeneration(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ generateOres(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="96" width="200" x="330" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="node11" parent="C2ex4ajUAVZv9EfkUBmz-3" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModTreeGeneration&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModTreeGeneration(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ generateTrees(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="207" x="580" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="node7" parent="C2ex4ajUAVZv9EfkUBmz-3" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModWorldGeneration&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModWorldGeneration(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ generateModWorldGen(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="213" x="850" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="88BtzVay6SosYKjA-qqD-4" parent="C2ex4ajUAVZv9EfkUBmz-11" style="swimlane;startSize=0;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="740" width="850" x="151" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="88BtzVay6SosYKjA-qqD-13" parent="C2ex4ajUAVZv9EfkUBmz-11" style="swimlane;startSize=0;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="250" width="360" x="215" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="88BtzVay6SosYKjA-qqD-14" parent="88BtzVay6SosYKjA-qqD-13" style="text;html=1;whiteSpace=wrap;strokeColor=#6D1F00;fillColor=#a0522d;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Surface&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="119" x="26" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="node28" parent="88BtzVay6SosYKjA-qqD-13" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModMaterialRules&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModMaterialRules(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- makeStateRule(Block): MaterialRule&lt;br/&gt;+ makeRules(): MaterialRule&lt;/p&gt;" vertex="1">
+          <mxGeometry height="117" width="242" x="56" y="96.5" as="geometry" />
+        </mxCell>
+        <mxCell id="node12" parent="C2ex4ajUAVZv9EfkUBmz-11" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModBiomes&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModBiomes(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- mobSpawns(): SpawnSettings&lt;br/&gt;+ bootstrap(Registerable&amp;lt;Biome&amp;gt;): void&lt;br/&gt;- biomeGeneration(Registerable&amp;lt;Biome&amp;gt;): GenerationSettings&lt;br/&gt;+ createLavenderBiome(Registerable&amp;lt;Biome&amp;gt;): Biome&lt;br/&gt;- biomeEffects(): BiomeEffects&lt;/p&gt;" vertex="1">
+          <mxGeometry height="190" width="400" x="301" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="node32" parent="C2ex4ajUAVZv9EfkUBmz-11" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModTerrablenderAPI&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModTerrablenderAPI(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ onTerraBlenderInitialized(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="96" width="222" x="751" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="node17" parent="C2ex4ajUAVZv9EfkUBmz-11" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModOverworldRegion&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModOverworldRegion(Identifier, RegionType, int): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ addBiomes(Registry&amp;lt;Biome&amp;gt;, Consumer&amp;lt;Pair&amp;lt;NoiseHypercube, RegistryKey&amp;lt;Biome&amp;gt;&amp;gt;&amp;gt;): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="611" x="255.5" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="88BtzVay6SosYKjA-qqD-5" parent="C2ex4ajUAVZv9EfkUBmz-11" style="text;html=1;whiteSpace=wrap;strokeColor=#432D57;fillColor=#76608a;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Biome&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="103" x="178" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="88BtzVay6SosYKjA-qqD-20" parent="1" style="swimlane;startSize=0;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="1200" width="740" x="-920" y="-1370" as="geometry" />
+        </mxCell>
+        <mxCell id="88BtzVay6SosYKjA-qqD-21" parent="88BtzVay6SosYKjA-qqD-20" style="text;html=1;whiteSpace=wrap;strokeColor=#BD7000;fillColor=#f0a30a;align=center;verticalAlign=middle;rounded=0;fontColor=#000000;" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;Datagen&lt;/font&gt;" vertex="1">
+          <mxGeometry height="57" width="190" x="50" y="33" as="geometry" />
+        </mxCell>
+        <mxCell id="node26" parent="88BtzVay6SosYKjA-qqD-20" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModLootTableProvider&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModLootTableProvider(FabricDataOutput, CompletableFuture&amp;lt;WrapperLookup&amp;gt;): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ multipleOreDrops(Block, Item, float, float): Builder&lt;br/&gt;+ generate(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="117" width="526" x="120" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="node5" parent="88BtzVay6SosYKjA-qqD-20" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModRecipeProvider&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModRecipeProvider(FabricDataOutput, CompletableFuture&amp;lt;WrapperLookup&amp;gt;): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;# getRecipeGenerator(WrapperLookup, RecipeExporter): RecipeGenerator&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; name: String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="138" width="507" x="120" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="node15" parent="88BtzVay6SosYKjA-qqD-20" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModItemTagProvider&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModItemTagProvider(FabricDataOutput, CompletableFuture&amp;lt;WrapperLookup&amp;gt;): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;# configure(WrapperLookup): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="520" x="120" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="node8" parent="88BtzVay6SosYKjA-qqD-20" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModModelProvider&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModModelProvider(FabricDataOutput): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ generateItemModels(ItemModelGenerator): void&lt;br/&gt;+ generateBlockStateModels(BlockStateModelGenerator): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="117" width="400" x="120" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="node25" parent="88BtzVay6SosYKjA-qqD-20" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModBlockTagProvider&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModBlockTagProvider(FabricDataOutput, CompletableFuture&amp;lt;WrapperLookup&amp;gt;): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;# configure(WrapperLookup): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="96" width="528" x="120" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="node34" parent="88BtzVay6SosYKjA-qqD-20" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModRegistryDataGenerator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModRegistryDataGenerator(FabricDataOutput, CompletableFuture&amp;lt;WrapperLookup&amp;gt;): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;# configure(WrapperLookup, Entries): void&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; name: String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="564" x="120" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-22" parent="1" style="swimlane;startSize=0;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="960" width="1940" x="-920" y="450" as="geometry">
+            <mxRectangle height="40" width="50" x="-2590" y="940" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-23" parent="C2ex4ajUAVZv9EfkUBmz-22" style="text;html=1;whiteSpace=wrap;strokeColor=#B20000;fillColor=#e51400;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;Item&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="159" x="851" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-25" parent="C2ex4ajUAVZv9EfkUBmz-22" style="swimlane;startSize=0;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="360" width="1450" x="230" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="node16" parent="C2ex4ajUAVZv9EfkUBmz-25" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LavenderLatteItem&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ LavenderLatteItem(Settings): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ finishUsing(ItemStack, World, LivingEntity): ItemStack&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="360" x="870" y="164" as="geometry" />
+        </mxCell>
+        <mxCell id="node27" parent="C2ex4ajUAVZv9EfkUBmz-25" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CrosspickItem&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ CrosspickItem(ToolMaterial, float, float, Settings): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getBlocksToBeDestroyed(int, BlockPos, ServerPlayerEntity): List&amp;lt;BlockPos&amp;gt;&lt;br/&gt;~ validToMine(int, int): boolean&lt;/p&gt;" vertex="1">
+          <mxGeometry height="117" width="499" x="140" y="147" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-24" parent="C2ex4ajUAVZv9EfkUBmz-25" style="text;html=1;whiteSpace=wrap;strokeColor=#6D1F00;fillColor=#a0522d;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;Custom&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="190" x="620" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="node0" parent="C2ex4ajUAVZv9EfkUBmz-22" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModToolMaterials&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModToolMaterials(): &lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="193" x="1400" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-29" parent="1" style="swimlane;startSize=0;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="880" width="1180" x="1180" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-26" parent="C2ex4ajUAVZv9EfkUBmz-29" style="text;html=1;whiteSpace=wrap;strokeColor=#996185;fillColor=#e6d0de;align=center;verticalAlign=middle;rounded=0;gradientColor=#d5739d;" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;block&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="150" x="515" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="node31" parent="C2ex4ajUAVZv9EfkUBmz-29" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModBlocks&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModBlocks(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ registerModBlocks(): void&lt;br/&gt;- registerFactoryBlock(String, Function&amp;lt;Settings, Block&amp;gt;, Settings): Block&lt;br/&gt;- registerBlock(String, Settings): Block&lt;br/&gt;- registerBlockItem(String, Block): void&lt;br/&gt;- registerBlockWithoutBlockItem(String, Function&amp;lt;Settings, Block&amp;gt;): Block&lt;/p&gt;" vertex="1">
+          <mxGeometry height="192" width="456" x="362" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-27" parent="C2ex4ajUAVZv9EfkUBmz-29" style="text;html=1;whiteSpace=wrap;strokeColor=#d79b00;fillColor=#ffcd28;align=center;verticalAlign=middle;rounded=0;gradientColor=#ffa500;" value="&lt;span style=&quot;font-size: 48px;&quot;&gt;custom&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="182.5" x="498.75" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="node10" parent="C2ex4ajUAVZv9EfkUBmz-29" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LavenderLeavesBlock&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ LavenderLeavesBlock(Settings): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ CODEC: MapCodec&amp;lt;LavenderLeavesBlock&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;# spawnLeafParticle(World, BlockPos, Random): void&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; CODEC: MapCodec&amp;lt;LavenderLeavesBlock&amp;gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="170" width="341" x="690" y="571.5" as="geometry" />
+        </mxCell>
+        <mxCell id="node14" parent="C2ex4ajUAVZv9EfkUBmz-29" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LavenderCropBlock&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ LavenderCropBlock(Settings): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ MAX_AGE: int&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;# appendProperties(Builder&amp;lt;Block, BlockState&amp;gt;): void&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; seedsItem: ItemConvertible&lt;br/&gt; ageProperty: IntProperty&lt;br/&gt; MAX_AGE: int&lt;/p&gt;" vertex="1">
+          <mxGeometry height="213" width="344" x="171" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-33" parent="1" style="swimlane;startSize=0;fillColor=#ffff88;strokeWidth=10;strokeColor=light-dark(#36393D,#A18EB3);" value="" vertex="1">
+          <mxGeometry height="4200" width="6470" x="-1820" y="-2430" as="geometry" />
+        </mxCell>
+        <mxCell id="node35" parent="C2ex4ajUAVZv9EfkUBmz-33" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LavenderBiome&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ LavenderBiome(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ onInitialize(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="134" x="2830" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="node2" parent="C2ex4ajUAVZv9EfkUBmz-33" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LavenderBiomeClient&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ LavenderBiomeClient(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ onInitializeClient(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="170" x="2983.5" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="node3" parent="C2ex4ajUAVZv9EfkUBmz-33" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LavenderBiomeDataGenerator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ LavenderBiomeDataGenerator(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ buildRegistry(RegistryBuilder): void&lt;br/&gt;+ onInitializeDataGenerator(FabricDataGenerator): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="352" x="3194" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-18" parent="C2ex4ajUAVZv9EfkUBmz-33" style="swimlane;startSize=0;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="850" width="950" x="4600" y="1640" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-20" parent="C2ex4ajUAVZv9EfkUBmz-18" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 26px;&quot;&gt;Util&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="455" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="node21" parent="C2ex4ajUAVZv9EfkUBmz-18" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CrosspickUsageEvent&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ CrosspickUsageEvent(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ beforeBlockBreak(World, PlayerEntity, BlockPos, BlockState, BlockEntity?): boolean&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="550" x="205.5" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="node22" parent="C2ex4ajUAVZv9EfkUBmz-18" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ModTags&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ModTags(): &lt;/p&gt;" vertex="1">
+          <mxGeometry height="58" width="88" x="441" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="node33" parent="C2ex4ajUAVZv9EfkUBmz-18" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Blocks&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Blocks(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- createTag(String): TagKey&amp;lt;Block&amp;gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="96" width="231" x="120" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="node30" parent="C2ex4ajUAVZv9EfkUBmz-18" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Items&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ Items(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- createTag(String): TagKey&amp;lt;Item&amp;gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="96" width="227" x="610" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-35" edge="1" parent="C2ex4ajUAVZv9EfkUBmz-18" source="node22" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.169;exitY=0.962;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="node33" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="220" y="460" as="sourcePoint" />
+            <mxPoint x="380" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-36" edge="1" parent="C2ex4ajUAVZv9EfkUBmz-18" source="node22" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="node30" value="Extends">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="680" y="580" as="sourcePoint" />
+            <mxPoint x="460" y="874" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-31" parent="C2ex4ajUAVZv9EfkUBmz-33" style="swimlane;startSize=0;strokeColor=#36393d;strokeWidth=3;fillColor=#ffff88;" value="" vertex="1">
+          <mxGeometry height="330" width="1200" x="4510" y="2820" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-30" parent="C2ex4ajUAVZv9EfkUBmz-31" style="text;html=1;whiteSpace=wrap;strokeColor=#36393d;fillColor=#ffff88;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;Mixin&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="210" x="495" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="node29" parent="C2ex4ajUAVZv9EfkUBmz-31" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#ffff88;strokeColor=#36393d;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExampleMixin&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ ExampleMixin(): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- init(CallbackInfo): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="156" x="100" y="153.5" as="geometry" />
+        </mxCell>
+        <mxCell id="node20" parent="C2ex4ajUAVZv9EfkUBmz-31" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fillColor=#ffff88;strokeColor=#36393d;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LavenderSheepMixin&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;# LavenderSheepMixin(EntityType&amp;lt;AnimalEntity&amp;gt;, World): &lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- initLavenderSheep(ServerWorldAccess, LocalDifficulty, SpawnReason, EntityData, CallbackInfoReturnable&amp;lt;EntityData&amp;gt;): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="803" x="330" y="153.5" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-34" parent="C2ex4ajUAVZv9EfkUBmz-33" style="text;html=1;whiteSpace=wrap;strokeColor=#432D57;fillColor=#76608A;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="&lt;font style=&quot;font-size: 150px;&quot;&gt;Lavender Biome&lt;/font&gt;" vertex="1">
+          <mxGeometry height="300" width="2040" x="2215" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="C2ex4ajUAVZv9EfkUBmz-54" parent="C2ex4ajUAVZv9EfkUBmz-33" style="text;html=1;whiteSpace=wrap;strokeColor=#432D57;fillColor=#76608a;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;By&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 35px;&quot;&gt;Marcel Taveau&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 35px;&quot;&gt;Santiago Santos&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="380" x="4310" y="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
