@@ -1,0 +1,39 @@
+{
+  "itemgroup.lavender_biome.lavender_biome_group": "Biome de lavande",
+
+
+  "item.lavenderbiome.lavender_latte": "Latté à la lavande",
+
+
+  "item.lavenderbiome.lavender_seeds" : "Graines de lavande",
+  "item.lavenderbiome.lavendrite_ingot": "Lingot de lavandrite",
+  "item.lavenderbiome.raw_lavendrite": "Lavendrite brut",
+
+
+  "item.lavenderbiome.lavendrite_sword": "Épée en lavendrite",
+  "item.lavenderbiome.lavendrite_pickaxe":"Pioche en lavandrite",
+  "item.lavenderbiome.lavendrite_axe": "Hache en lavandrite",
+  "item.lavenderbiome.lavendrite_shovel":"Pelle en lavandrite",
+  "item.lavenderbiome.lavendrite_hoe": "Houe en lavandrite",
+  "item.lavenderbiome.lavendrite_crosspick": "Pioche croisée en lavandrite",
+
+
+  "item.lavenderbiome.lavendrite_block": "Bloc de lavendrite",
+  "item.lavenderbiome.raw_lavendrite_block": "Bloc de lavendrite brut",
+  "item.lavenderbiome.lavendrite_ore" : "Minerai de lavendrite",
+  "item.lavenderbiome.deepslate_lavendrite_ore" : "Minerai de lavandrite des abîmes",
+
+  "item.lavenderbiome.lavenderwood_log" : "Bûche de bois de lavande",
+  "item.lavenderbiome.stripped_lavenderwood_log" : "Bûche de bois de lavande écorcée",
+  "item.lavenderbiome.lavenderwood_wood" : "Bois de lavande",
+  "item.lavenderbiome.stripped_lavenderwood_wood" : "Bois de lavande écorcé",
+  "item.lavenderbiome.lavenderwood_planks" : "Planches de bois de lavande",
+
+
+  "item.lavenderbiome.lavenderwood_leaves" : "Feuilles de bois de lavande",
+
+
+  "item.lavenderbiome.lavender" : "Lavande",
+  "item.lavenderbiome.lavender_crop" : "Plant de lavande",
+  "item.lavenderbiome.lavenderwood_sapling" : "Pousse de bois de lavande"
+}
